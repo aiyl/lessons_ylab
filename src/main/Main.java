@@ -8,21 +8,22 @@ public class Main {
 
     public static void main(String[] args) {
         Cat cat = new Cat();
-        cat.setEat(true);
         cat.setSleep(false);
-        cat.voice();
+        cat.setEat(true);
+        System.out.println(cat.voice());
         stdout();
 
         Dog dog = new Dog();
-        dog.setSleep(true);
         dog.setEat(true);
-        dog.voice();
+        dog.setSleep(false);
+        System.out.println(dog.voice());
         stdout();
 
         Lion lion = new Lion();
-        dog.setSleep(true);
-        dog.setEat(true);
-        dog.voice();
+        lion.setSleep(true);
+        lion.setEat(true);
+        System.out.println(lion.voice());
+        stdout();
     }
 
     private static void stdout(){
